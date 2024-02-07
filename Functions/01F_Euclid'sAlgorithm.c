@@ -3,7 +3,6 @@
 #include <stdlib.h>
 
 int maxNum(int[]);
-int* minMax(int[]);
 
 int maxNum(int in[]) {
     int maxNum;
@@ -19,10 +18,6 @@ int maxNum(int in[]) {
     return maxNum;
 }
 
-int* minMax(int in[]) {
-
-
-}
 
 int main() {
 
