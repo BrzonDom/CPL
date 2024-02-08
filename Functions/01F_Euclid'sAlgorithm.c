@@ -1,4 +1,3 @@
-#include <inttypes.h>
 #include <stdio.h>
 
 int maxNum(int[]);
@@ -74,7 +73,7 @@ int main() {
             while (r != 0) {
                 r = a % b;
                 d = a / b;
-                printf("\t\t%d. (%d : %d)  |  %d = %d * %d + %d\n", t, a, b, a, d, b, r);
+                printf("\t\t%d. (%3d : %3d)  |  %3d = %3d * %3d + %2d\n", t, a, b, a, d, b, r);
                 t += 1;
                 a = b;
                 b = r;
