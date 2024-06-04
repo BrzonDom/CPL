@@ -3,6 +3,26 @@
 #include <string.h>
 
 
+char* strcpy_f(char* dest, const char* src) {
+
+    if (dest == NULL) return NULL;
+
+    unsigned long int i = 0;
+
+    while (src[i] != '\0') {
+
+        dest[i] = src[i];
+        
+        i++;
+    }
+
+    dest[i] = '\0';
+
+    return dest;
+    
+}
+
+
 int main(void) {
 
     char str1[] = "Test1";
