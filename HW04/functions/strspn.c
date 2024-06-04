@@ -3,6 +3,40 @@
 #include <string.h>
 
 
+size_t strspn_f(const char* dest, const char* src) {
+
+    size_t len = 0, i, j;
+
+    size_t lenDest = 0;
+        while (dest[lenDest] != '\0') lenDest++;
+
+    size_t lenSrc = 0;
+        while (src[lenSrc] != '\0') lenSrc++; 
+    
+    int match = 0;
+
+    for (i = 0; i < lenDest; i++) {
+
+        match = 0;
+
+        for (j = 0; j < lenSrc; j++) {
+            if (dest[i] == src[j]) {
+                match = 1;
+                break;
+            }
+        }
+
+        if (!match) break;
+        else len++;
+
+    }
+
+
+    return len;
+
+}
+
+
 int main(void) {
 
     char str1[] = "1234567890abcdefgh";
