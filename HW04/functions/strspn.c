@@ -3,7 +3,18 @@
 #include <string.h>
 
 
+    // size_t strspn( const char* dest, const char* src );
 size_t strspn_f(const char* dest, const char* src) {
+
+/*  description:
+        Returns the length of the maximum initial segment (span) of the byte string pointed to by dest,
+        that consists of only the characters found in byte string pointed to by src.
+    */
+
+/*  parametrs:   
+        dest = pointer to the null-terminated byte string to be analyzed
+        src	 = pointer to the null-terminated byte string that contains the characters to search for
+    */
 
     size_t len = 0, i, j;
 
@@ -34,6 +45,9 @@ size_t strspn_f(const char* dest, const char* src) {
 
     return len;
 
+/*  return:
+        The length of the maximum initial segment that contains only characters from byte string pointed to by src.
+    */
 }
 
 
