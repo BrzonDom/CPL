@@ -85,6 +85,24 @@ int main(void) {
         res = strtok(NULL, splt);
     }
 
+    strcpy(str, "Part1 Part2 Part3 Part4 Part5");
+    printf("\n\nStr: %s\n\n", str);
+
+    res = strtok_f(str, splt);
+    i = 1;
+
+    while (res != NULL) {
+
+        printf("%d.part: %s\n", i, res);
+        i++;
+
+        // for (j = 0; j < szStr; j++)
+        //     printf("%c", str[j]);
+        // printf("\n\n");
+    
+        res = strtok_f(NULL, splt);
+    }
+
 
     return 0;
 
