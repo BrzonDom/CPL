@@ -66,7 +66,7 @@ int main(void) {
     int lenStr = strlen(str);
     int szStr = sizeof(str);
 
-    printf("%s\n", str);
+    printf("Str: %s\n", str);
     printf("\tlen: %d\n", lenStr);
     printf("\tsiz: %d\n", szStr);
 
@@ -95,10 +95,6 @@ int main(void) {
 
         printf("%d.part: %s\n", i, res);
         i++;
-
-        // for (j = 0; j < szStr; j++)
-        //     printf("%c", str[j]);
-        // printf("\n\n");
     
         res = strtok_f(NULL, splt);
     }
