@@ -72,10 +72,15 @@ int main(void) {
 
     res = strpbrk(str1, str2);
 
-    printf("First character found: %c\n\n", *res);
+    printf("Library strpbrk function:\n");
+        printf("\tFirst character found: %c\n", *res);
+        printf("\tRest of the string: %s\n", res);
 
-    printf("Rest of the string: %s\n", res);
+    res = strpbrk_f(str1, str2);
 
+    printf("\nMy strpbrk function:\n");
+        printf("\tFirst character found: %c\n", *res);
+        printf("\tRest of the string: %s\n", res);
 
     return 0;
 
