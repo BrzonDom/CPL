@@ -42,6 +42,8 @@ char* strcpy_f(char* dest, const char* src) {
 
 int main(void) {
 
+    int i;
+
     char str1[] = "Test1";
     char str2[] = "Test2 string";
 
@@ -62,11 +64,27 @@ int main(void) {
     printf("Str1: %s\n", str1);
     printf("Str2: %s\n\n", str2);
 
+    printf("sizRes: %d\n\n", sizeof(res));
+
+    printf("Library strcpy function:\n");
     strcpy(res, str1);
-        printf("Res1: %s\n", res);
+        printf("\tRes1: %s\n", res);
 
     strcpy(res, str2);
-        printf("Res2: %s\n\n", res);
+        printf("\tRes2: %s\n", res);
+
+    // for (i = 0; i < sizeof(res); i++)
+    //     printf("%c", res[i]);
+
+    printf("\nMy strcpy function:\n");
+    strcpy_f(res, str1);
+        printf("\tRes1: %s\n", res);
+
+    strcpy_f(res, str2);
+        printf("\tRes2: %s\n\n", res);
+    
+    // for (i = 0; i < sizeof(res); i++)
+    //     printf("%c", res[i]);
 
 
     return 0;
