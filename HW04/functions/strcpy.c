@@ -3,7 +3,20 @@
 #include <string.h>
 
 
+    // char *strcpy( char *dest, const char *src );
 char* strcpy_f(char* dest, const char* src) {
+
+/*  description:
+        Copies the null-terminated byte string pointed to by src, including the null terminator, 
+        to the character array whose first element is pointed to by dest.
+        The behavior is undefined if the dest array is not large enough. The behavior is undefined if the strings overlap. 
+        The behavior is undefined if either dest is not a pointer to a character array or src is not a pointer to a null-terminated byte string.        
+    */
+
+/*  parameters:
+        dest = pointer to the character array to write to
+        src	 = pointer to the null-terminated byte string to copy from
+    */
 
     if (dest == NULL) return NULL;
 
@@ -18,8 +31,12 @@ char* strcpy_f(char* dest, const char* src) {
 
     dest[i] = '\0';
 
+
     return dest;
-    
+
+/*  return:
+        returns a copy of dest
+    */
 }
 
 
