@@ -3,7 +3,19 @@
 #include <string.h>
 
 
+    // char *strpbrk( const char *dest, const char *breakset );
 char* strpbrk_f(const char* dest, const char* breakset) {
+
+/*  description:
+        Scans the null-terminated byte string pointed to by dest for 
+        any character from the null-terminated byte string pointed to 
+        by breakset, and returns a pointer to that character.
+    */
+
+/*  parameters:
+        dest     = pointer to the null-terminated byte string to be analyzed
+        breakset = pointer to the null-terminated byte string that contains the characters to search for
+    */
 
     if (dest == NULL || breakset == NULL)
         return NULL;
@@ -26,6 +38,11 @@ char* strpbrk_f(const char* dest, const char* breakset) {
 
 
     return NULL;
+
+/*  return:
+        Pointer to the first character in dest, that is also in breakset, 
+        or null pointer if no such character exists.
+    */
 
 }
 
