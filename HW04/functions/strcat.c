@@ -2,7 +2,20 @@
 #include <string.h>
 
 
+    // char *strcat(char *dest, const char *src);
 char* strcat_f(char* dest, const char* src) {
+
+/*  description:
+        Appends a copy of the null-terminated byte string pointed to by src to the end of the null-terminated byte string pointed to by dest. 
+        The character src[0] replaces the null terminator at the end of dest. The resulting byte string is null-terminated.
+        The behavior is undefined if the destination array is not large enough for the contents of both src and dest and the terminating null character.
+        The behavior is undefined if the strings overlap. The behavior is undefined if either dest or src is not a pointer to a null-terminated byte string.
+    */
+
+/*  parameters:
+        dest = pointer to the null-terminated byte string to append to 
+        src  = pointer to the null-terminated byte string to copy from 
+    */
 
     unsigned long int i = 0, j = 0;
 
@@ -20,6 +33,10 @@ char* strcat_f(char* dest, const char* src) {
 
 
     return dest;
+
+/*  return: 
+        returns a copy of dest
+    */
 }
 
 
