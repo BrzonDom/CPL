@@ -3,6 +3,33 @@
 #include <string.h>
 
 
+char* strpbrk_f(const char* dest, const char* breakset) {
+
+    if (dest == NULL || breakset == NULL)
+        return NULL;
+
+    const char *tempset;
+
+    while (*dest != '\0') {
+
+        tempset = breakset;
+
+        while (*tempset != '\0') {
+
+            if (*dest == *tempset)
+                return (char*) dest;
+
+            tempset++;
+        }
+        dest++;
+    }
+
+
+    return NULL;
+
+}
+
+
 int main(void) {
 
     int i, j;
