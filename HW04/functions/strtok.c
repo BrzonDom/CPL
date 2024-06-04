@@ -11,15 +11,7 @@ int main(void) {
     char splt[] = " ";
 
     int lenStr = strlen(str);
-    // for (i = 0; i < lenStr; i++)
-    //     printf("%c", str[i]);
-
-    // printf("\n\n");
-
     int szStr = sizeof(str);
-    // for (i = 0; i < szStr; i++)
-    //     printf("%c", str[i]);
-
 
     printf("%s\n", str);
     printf("\tlen: %d\n", lenStr);
@@ -36,10 +28,6 @@ int main(void) {
         
         printf("%d.part: %s\n", i, res);
         i++;
-
-        // for (j = 0; j < szStr; j++)
-        //     printf("%c", str[j]);
-        // printf("\n\n");
 
         res = strtok(NULL, splt);
     }
