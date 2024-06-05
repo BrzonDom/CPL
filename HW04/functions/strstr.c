@@ -21,15 +21,16 @@ int main(void) {
 
 
     printf("str1: %s\n", str1);
-    printf("str2: %s\n\n", str2);
+    printf("\tlen1: %d\n", len1);
+    printf("\tsiz1: %d\n\n", siz1);
 
-    printf("len1: %d\n", len1);
-    printf("siz1: %d\n\n", siz1);
-
-    printf("len2: %d\n", len2);
-    printf("siz2: %d\n\n", siz2);
+    printf("str2: %s\n", str2);
+    printf("\tlen2: %d\n", len2);
+    printf("\tsiz2: %d\n\n", siz2);
 
     printf("fin: %s\n", fin);
+    printf("\tlenFin: %d\n", lenFin);
+    printf("\tsizFin: %d\n\n", sizFin);
 
     char* res;
     
