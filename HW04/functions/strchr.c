@@ -3,6 +3,20 @@
 #include <string.h>
 
 
+char* strchr_f(const char *str, int ch) {
+
+    while (*str != '\0') {
+
+        if (*str == ch) return (char*) str;
+
+        str++;
+    }
+
+    return NULL;
+
+}
+
+
 int main(void) {
 
     int i, j;
