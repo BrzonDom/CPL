@@ -2,8 +2,22 @@
 #include <stdlib.h>
 #include <string.h>
 
-
+    // size_t strlen( const char *str );
 size_t strlen_f(const char* str) {
+
+/*  description:
+        Returns the length of the given null-terminated byte string, 
+        that is, the number of characters in a character array whose 
+        first element is pointed to by str up to and not including 
+        the first null character.
+
+        The behavior is undefined if str is not a pointer to a 
+        null-terminated byte string.
+    */
+
+/*  parameters:
+        str = pointer to the null-terminated byte string to be examined
+    */
 
     size_t len = 0;
 
@@ -14,6 +28,10 @@ size_t strlen_f(const char* str) {
     }
 
     return len;
+
+/*  return:
+        The length of the null-terminated byte string str.
+    */
 
 }
 
