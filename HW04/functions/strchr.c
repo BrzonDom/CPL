@@ -3,7 +3,21 @@
 #include <string.h>
 
 
+    // char *strchr( const char *str, int ch );
 char* strchr_f(const char *str, int ch) {
+
+/*  description:
+        Finds the first occurrence of ch (after conversion to char as if 
+        by (char)ch) in the null-terminated byte string pointed to by str 
+        (each character interpreted as unsigned char). The terminating null 
+        character is considered to be a part of the string and can be 
+        found when searching for '\0'.
+    */
+
+/*  parameters:
+        str	= pointer to the null-terminated byte string to be analyzed
+        ch  = character to search for
+    */
 
     while (*str != '\0') {
 
@@ -13,6 +27,11 @@ char* strchr_f(const char *str, int ch) {
     }
 
     return NULL;
+
+/*  return:            
+        Pointer to the found character in str, or null pointer if no such 
+        character is found.
+    */
 
 }
 
