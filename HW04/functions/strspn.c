@@ -41,7 +41,7 @@ size_t strspn_f(const char* dest, const char* src) {
         else len++;
 
     }
-
+    
 
     return len;
 
@@ -71,9 +71,15 @@ int main(void) {
     printf("\tlen2: %d\n", len2);
     printf("\tsiz2: %d\n\n", siz2);
 
+    printf("Library strspn function:\n");
 
     int lenRes = strspn(str1, str2);
-        printf("lenRes: %d\n", lenRes);
+        printf("\tlenRes: %d\n", lenRes);
+
+    printf("\nMy strspn function:\n");
+
+    lenRes = strspn_f(str1, str2);
+        printf("\tlenRes: %d\n", lenRes);
 
 
     return 0;
