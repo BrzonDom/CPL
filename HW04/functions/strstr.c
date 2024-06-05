@@ -47,13 +47,27 @@ int main(void) {
     int siz1 = sizeof(str1);
     int siz2 = sizeof(str2);
 
-    printf("str1: %s\n", str1);
-    printf("\tlen1: %d\n", len1);
-    printf("\tsiz1: %d\n\n", siz1);
+    printf("Library strlen function:\n\n");
 
-    printf("str2: %s\n", str2);
-    printf("\tlen2: %d\n", len2);
-    printf("\tsiz2: %d\n\n", siz2);
+    printf("\tstr1: %s\n", str1);
+    printf("\t\tlen1: %d\n", len1);
+    printf("\t\tsiz1: %d\n\n", siz1);
+
+    printf("\tstr2: %s\n", str2);
+    printf("\t\tlen2: %d\n", len2);
+    printf("\t\tsiz2: %d\n\n", siz2);
+
+
+    printf("\nMy strlen function:\n\n");
+
+    len1 = strlen_f(str1);
+    len2 = strlen_f(str2);
+
+    printf("\tstr1: %s\n", str1);
+    printf("\t\tlen1: %d\n\n", len1);
+
+    printf("\tstr2: %s\n", str2);
+    printf("\t\tlen2: %d\n\n", len2);
 
 
     return 0;
