@@ -53,16 +53,15 @@ int main(void) {
 
     int lenRes = len1 + len2 + 1;
 
-    printf("len1: %d\n", len1);
-    printf("siz1: %d\n\n", siz1);
+    printf("str1: %s\n", str1);
+    printf("\tlen1: %d\n", len1);
+    printf("\tsiz1: %d\n\n", siz1);
 
-    printf("len2: %d\n", len2);
-    printf("siz2: %d\n\n", siz2);
+    printf("str2: %s\n", str2);
+    printf("\tlen2: %d\n", len2);
+    printf("\tsiz2: %d\n\n", siz2);
 
     char res[50];
-
-    printf("Str1: %s\n", str1);
-    printf("Str2: %s\n\n", str2);
 
     strcat(str1, str2);
         printf("Res: %s\n", str1);
